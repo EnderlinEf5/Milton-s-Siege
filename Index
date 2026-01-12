@@ -1,2 +1,33 @@
 index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Milton & Winter Siege – Geese Edition</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Milton & Winter Siege – KWC + Geese</h1>
+
+  <div class="controls">
+    <strong>Milton’s Siege (Hurricane Mode)</strong><br>
+    <button onclick="startMilton('Sarasota')">Start Milton – Sarasota</button>
+    <button onclick="startMilton('Tampa')">Start Milton – Tampa (15% calmer)</button>
+    <button onclick="toggleComfortMode()">Toggle Comfort Mode</button>
+  </div>
+
+  <div class="controls">
+    <strong>Winter Siege (Thundersnow + Geese)</strong><br>
+    <button onclick="toggleGooseMode()">Toggle Goose Mode</button><br>
+    <button onclick="tryStartRegion('Waterloo')">Start Waterloo</button>
+    <button onclick="tryStartRegion('Kitchener')">Start Kitchener</button>
+    <button onclick="tryStartRegion('Cambridge')">Start Cambridge</button>
+  </div>
+
+  <canvas id="gameCanvas" width="800" height="450"></canvas>
+
+  <script src="game.js"></script>
+</body>
+</html>
 
