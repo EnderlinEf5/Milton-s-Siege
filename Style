@@ -1,1 +1,27 @@
 style.css
+body {
+  background: #111722;
+  color: #f5f5f5;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+#gameCanvas {
+  display: block;
+  margin: 20px auto;
+  background: #222838;
+  border: 2px solid #444;
+}
+
+.controls {
+  margin-bottom: 10px;
+}
+
+.controls button {
+  margin: 4px;
+  padding: 8px 14px;
+  background: #2f3b55;
+  color: #f5f5f5;
+  border: 1px solid #555;
+  cursor: pointer;
+}
