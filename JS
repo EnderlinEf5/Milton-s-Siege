@@ -1,5 +1,30 @@
 game.js
 const C = document.getElementById("gameCanvas");
+// ============================
+// GLOBAL GAME BOOTSTRAP
+// ============================
+
+// Stop arrow keys from scrolling the page
+window.addEventListener("keydown", e => {
+  if (["ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight"].includes(e.key)) {
+    e.preventDefault();
+  }
+});
+
+// Canvas ready check
+let CANVAS_READY = false;
+
+window.addEventListener("load", () => {
+  const c = document.getElementById("gameCanvas");
+  if (!c) {
+    alert("Canvas not found! Check index.html");
+    return;
+  }
+  CANVAS_READY = true;
+  console.log("Canvas ready");
+});
+
+const C = document.getElementById("gameCanvas");
 const CTX = C.getContext("2d");
 
 const KEYS = {};
